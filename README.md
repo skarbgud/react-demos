@@ -4,17 +4,17 @@
 
 React의 템플릿 구문을 JSX라고 합니다. JSX에서는 HTML 태그를 JavaScript 코드에 직접 넣을 수 있습니다. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f8eb50ca-573f-47b1-8fbc-7d007e3f58de/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled.png)
 
 ReactDOM.render()는 JSX를 HTML로 변환하고 지정된 DOM 노드로 렌더링하는 메소드입니다.
 
 실행결과
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/94b53cdb-d653-4256-bfb7-fc99315efc36/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%201.png)
 
 # 2. JSX에서 자바스크립트 사용하기(**Use JavaScript in JSX)**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/afd0959d-0492-4bdd-8acb-5f3c26cad758/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%202.png)
 
 JSX에서 JavaScript를 사용할 수도 있습니다. HTML 구문의 시작으로 꺾쇠 괄호( < )를 사용하고
 
@@ -27,23 +27,23 @@ Tips. [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Obj
 
 실행결과
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93a04ab5-1465-43ca-a590-25d3736b7a72/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%203.png)
 
 # 3. JSX에서 배열 사용하기 (****Use array in JSX)****
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43d9ef36-296a-498c-b63e-bb1a460399af/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%204.png)
 
 JavaScript 변수가 배열인 경우 JSX는 암시적으로 배열의 모든 구성원을 연결합니다.
 
 실행결과
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0012a902-aa02-420e-8c78-d51ec9548cc2/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%205.png)
 
 # 4. 컴포넌트 정의 (****Define a component)****
 
 **컴포넌트란?** **component : 재활용 가능한 UI 구성 단위**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c905e6a-b0e9-4b8f-b3a2-8fc146abdd6b/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%206.png)
 
 React를 사용할 때는 컴포넌트를 class 또는 함수로 정의할 수 있습니다. React 컴포넌트 class를 정의하려면 `React.Component`를 상속받아야 합니다.
 
@@ -81,7 +81,7 @@ class HelloMessage extends React.Component {
 
 실행결과
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd9f0779-d935-4689-9ed5-6606865fefe4/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%207.png)
 
 # 5. ****this.props.children****
 
@@ -89,13 +89,13 @@ React는 `this.props.children`**을 사용하여 구성 요소의 하위 노드
 
 ## props란?
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/716bc683-9425-4b1f-8699-717a787d43c1/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%208.png)
 
 <리액트 공식문서>
 
 그럼 props.children이란?
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24f929a1-bd13-45b9-b0dc-4c2c7b7100f6/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%209.png)
 
 <리액트 공식문서>
 
@@ -103,7 +103,7 @@ Welcome 이라는 컴포넌트를 정의했으면 해당 태그 사이에 내용
 
 좀 더 쉽게 아래의 예시를 보자
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c56cd4d-7c23-4cc6-b2c9-ca5a9586a2ab/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%2010.png)
 
 기차가 있습니다. 기차의 이름이 `ktx 산천` 일 수도 있고 `무궁화` 일수도 있습니다.
 
@@ -111,15 +111,15 @@ Welcome 이라는 컴포넌트를 정의했으면 해당 태그 사이에 내용
 
 [ktx 산천] 일 경우
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d7928c56-cd2f-4cff-965c-0949d2d670dd/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%2011.png)
 
 [무궁화] 일 경우
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70988db4-7912-468b-b4c9-744ef732716b/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%2012.png)
 
 여러개의 요소를 사용한 넣은 경우
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/87c5df39-75b9-4a52-9b88-0794e013f277/Untitled.png)
+![Untitled](https://raw.githubusercontent.com/skarbgud/Github-User-Content/main/Untitled%2013.png)
 
 `this.props.children`에는 세 가지 유의점이 있습니다. 
 
