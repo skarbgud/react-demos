@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../build/react.development.js"></script>
+    <script src="../build/react-dom.development.js"></script>
+    <script src="../build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      class Train extends React.Component {
+        render() {
+          return (
+            <ol>
+            {
+              React.Children.map(this.props.children, function (child) {
+                return <li>{child} 열차</li>;
+              })
+            }
+            </ol>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <Train>
+          <span>ktx 산천</span>
+          <span>무궁화</span>
+        </Train>,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>

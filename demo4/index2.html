@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../build/react.development.js"></script>
+    <script src="../build/react-dom.development.js"></script>
+    <script src="../build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      class HelloMessage extends React.Component { // React 컴포넌트 클래스 정의(이름은 대문자로 시작한다.)
+        render() { // Element 하나를 반환하는 함수인 render() 메서드를 생성한다.
+          return <h1>Hello {this.props.name}</h1>; // return에는 DOM 객체를 반환하도록 한다.
+        }
+      }
+
+      ReactDOM.render(
+        <HelloMessage name="John" />,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
