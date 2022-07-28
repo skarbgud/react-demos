@@ -1,5 +1,3 @@
-# 2.리액트 기초
-
 # 1. ****Render JSX****
 
 React의 템플릿 구문을 JSX라고 합니다. JSX에서는 HTML 태그를 JavaScript 코드에 직접 넣을 수 있습니다. 
