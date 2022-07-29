@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../build/react.development.js"></script>
+    <script src="../build/react-dom.development.js"></script>
+    <script src="../build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      class Input extends React.Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            text: 'Hello!'
+          }
+          this.handleChange = this.handleChange.bind(this)
+        }
+        handleChange(event) { // 함수로 받은 event 값에 target의 벨류를 setState를 통해 text에 저장한다.
+            console.log(`1.${event}`);
+            console.log(`2.${event.target}`);
+            console.log(`3.${event.target.value}`);
+          this.setState({ text: event.target.value });
+        }
+        render() {
+          var value = this.state.text;
+          return (
+            <div>
+              {/* 1.onChange를 통해서 변경을 감지해서 변경시 handleChange 함수를 호출한다. */}
+              <input type="text" value={value} onChange={this.handleChange} />  
+              <p>{value}</p>
+            </div>
+          );
+        }
+      }
+        
+      ReactDOM.render(<Input/>, document.getElementById('example'));
+    </script>
+  </body>
+</html>

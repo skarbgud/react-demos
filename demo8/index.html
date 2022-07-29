@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../build/react.development.js"></script>
+    <script src="../build/react-dom.development.js"></script>
+    <script src="../build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      class LikeButton extends React.Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            liked: false // 1.this.state.liked의 기본값은 false
+          }
+          this.handleClick = this.handleClick.bind(this)
+        }
+        handleClick(event) { //3.like는 클릭할때 마다 this.setState()로 상태가 !때문에 반대로 값이 된다.
+          this.setState({ liked: !this.state.liked }); 
+        }
+        render() {
+          var text = this.state.liked ? 'like' : 'haven\'t liked'; //4. this.state.liked의 상태가 true이면 like, false면 haven\'t liked
+          return (
+            // 2.클릭할때 마다 onClick을 통해 handleClick 메소드를 활성화 시킨다.
+            <p onClick={this.handleClick}> 
+              You {text} this. Click to toggle.  
+            </p>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <LikeButton />,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
